@@ -60,6 +60,12 @@
     "light": "#3C82F6",
     "dark": "#1D40B0"
   },
+  "background": {
+    "color": {
+      "dark": "#171717",
+      "light": "#F9FAFB"
+    }
+  },
   "favicon": "/favicon.svg",
   "logo": {
     "light": "/logo/light.svg",
