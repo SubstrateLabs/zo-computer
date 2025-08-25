@@ -16,8 +16,8 @@
           {
             "group": "Getting started",
             "pages": [
-              "index",
-              "quickstart"
+              "introduction",
+              "some-page"
             ]
           }
         ]
@@ -25,10 +25,10 @@
       {
         "tab": "Information",
         "pages": [
-          "security",
-          "terms",
-          "privacy-policy",
-          "contact"
+          "information/security",
+          "information/terms",
+          "information/privacy-policy",
+          "information/contact"
         ]
       }
     ],
