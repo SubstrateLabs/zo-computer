@@ -1,13 +1,4 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
-  "theme": "almond",
-  "name": "Zo Computer",
-  "colors": {
-    "primary": "#4B7AE7",
-    "light": "#3C82F6",
-    "dark": "#1D40B0"
-  },
-  "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
       {
@@ -42,22 +33,36 @@
       ]
     }
   },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
   "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:support@zocomputer.com"
-      }
-    ]
+    "primary": {
+      "type": "button",
+      "label": "Sign up",
+      "href": "https://www.zo.computer/signup"
+    }
   },
   "footer": {
     "socials": {
+      "discord": "https://discord.gg/2eZZ4NWE7G",
       "x": "https://x.com/zo_computer",
       "linkedin": "https://linkedin.com/company/zocomputer"
     }
+  },
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "almond",
+  "name": "Zo Computer",
+  "description": "Zo is a personal computer in the cloud that can be controlled by both you and your AI. Do research, build personal projects, get your digital work done in your own personalized workspace.",
+  "fonts": {
+    "family": "Quicksand",
+    "weight": 700
+  },
+  "colors": {
+    "primary": "#4B7AE7",
+    "light": "#3C82F6",
+    "dark": "#1D40B0"
+  },
+  "favicon": "/favicon.svg",
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
   }
 }
