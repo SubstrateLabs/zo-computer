@@ -8,10 +8,10 @@
             "group": "Welcome to Zo",
             "pages": [
               "introduction",
-              "FAQ",
               "getting-started",
-              "Features",
-              "Use-Cases"
+              "HostServices",
+              "Use-Cases",
+              "FAQ",
             ]
           }
         ]
