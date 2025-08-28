@@ -5,13 +5,9 @@
         "tab": "Guides",
         "groups": [
           {
-            "group": "Welcome to Zo",
+            "group": "Ownerߴs Manual",
             "pages": [
-              "introduction",
-              "getting-started",
-              "HostServices",
-              "Use-Cases",
-              "FAQ",
+              "introduction"
             ]
           }
         ]
