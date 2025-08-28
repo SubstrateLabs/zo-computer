@@ -8,8 +8,8 @@
             "group": "Ownerߴs Manual",
             "pages": [
               "introduction",
+              "your-workspace",
               "your-ai",
-              "your-computer",
               "getting-started"
             ]
           }
@@ -35,6 +35,12 @@
       ]
     }
   },
+  "redirects": [
+    {
+      "source": "/pricing",
+      "destination": "/your-ai#transparent-pricing"
+    }
+  ],
   "navbar": {
     "primary": {
       "type": "button",
@@ -70,6 +76,7 @@
   },
   "favicon": "/favicon.svg",
   "logo": {
+    "href": "https://www.zo.computer",
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
   }
