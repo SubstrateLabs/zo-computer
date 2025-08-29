@@ -7,10 +7,10 @@
           {
             "group": "Ownerߴs Manual",
             "pages": [
-              "introduction",
-              "your-workspace",
-              "your-ai",
-              "getting-started",
+              "intro",
+              "workspace",
+              "ai",
+              "start",
               "pricing"
             ]
           }
