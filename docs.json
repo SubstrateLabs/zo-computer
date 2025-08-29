@@ -36,12 +36,6 @@
       ]
     }
   },
-  "redirects": [
-    {
-      "source": "/pricing",
-      "destination": "/your-ai#transparent-pricing"
-    }
-  ],
   "navbar": {
     "primary": {
       "type": "button",
