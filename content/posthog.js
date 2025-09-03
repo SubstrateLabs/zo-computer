@@ -8,10 +8,11 @@ posthog.init('phc_E4yDcVlpE7EHHAkev2izoBl020NeCIWwvsWMrWqdECo',
         person_profiles: 'always'
     }
 )
-const queryString = window.location.search;
-const urlParams = new URLSearchParams(queryString);
-const host = urlParams.get("host");
+// We pass handle in anchor param when linking to docs
+const hashString = window.location.hash ? window.location.hash.slice(1) : "";
+const hashParams = new URLSearchParams(hashString);
+let identifier = (hashParams.get("handle") || hashParams.get("host") || "").trim();
 
-if (host) {
-    posthog.identify(host);
+if (identifier) {
+    posthog.identify(identifier);
 }
