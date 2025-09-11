@@ -39,6 +39,20 @@
     }
   },
   "navbar": {
+    "links": [
+      {
+        "label": "Company",
+        "href": "https://www.zo.computer/company"
+      },
+      {
+        "label": "Pricing",
+        "href": "https://www.zo.computer/pricing"
+      },
+      {
+        "label": "Blog",
+        "href": "https://www.zo.computer/blog"
+      }
+    ],
     "primary": {
       "type": "button",
       "label": "Sign up",
