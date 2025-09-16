@@ -10,7 +10,7 @@
           {
             "group": "Getting started",
             "icon": "flag",
-            "pages": ["intro", "vision", "product-updates", "pricing"]
+            "pages": ["intro", "product-updates", "pricing"]
           },
           {
             "group": "Working with your AI",
@@ -20,7 +20,7 @@
           {
             "group": "Advanced",
             "icon": "fish",
-            "pages": ["syncthing"]
+            "pages": ["servers", "syncthing"]
           }
         ]
       },
