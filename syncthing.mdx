@@ -1,5 +1,6 @@
 ---
 title: "Syncing files"
+icon: "folder"
 description: "How to sync files between your computer and your Zo Computer"
 ---
 
@@ -16,7 +17,8 @@ description: "How to sync files between your computer and your Zo Computer"
 </Frame>
 
 <Tip>
-  Syncing files requires some manual set up. But going through this process is useful, as you will learn how to run other hosted applications and services on your Zo Computer.
+  Syncing files requires some manual set up. But going through this process is useful, as you will learn how to run
+  other hosted applications and services on your Zo Computer.
 </Tip>
 
 # 1. Install SyncThing on your computer
@@ -24,17 +26,11 @@ description: "How to sync files between your computer and your Zo Computer"
 Install SyncThing on your computer by downloading the app from the [SyncThing Downloads](https://syncthing.net/downloads/) page. You may need to use the menu to open the full SyncThing application.
 
 <Frame caption="Click Open from the SyncThing menu to open the application">
-  <img
-    className="block"
-    src="/screenshots/syncthing-menubar.png"
-  />
+  <img className="block" src="/screenshots/syncthing-menubar.png" />
 </Frame>
 
 <Frame caption="The SyncThing application runs in your browser">
-  <img
-    className="block"
-    src="/screenshots/syncthing-first-open.png"
-  />
+  <img className="block" src="/screenshots/syncthing-first-open.png" />
 </Frame>
 
 Keep this window open – we'll return to it later.
@@ -102,14 +98,12 @@ Once your service is running, open the SyncThing application using the **Direct 
 <Warning>
   You **must set a password** for your Zo Computer's SyncThing. If you don't, anyone with the service URL can access it.
 
-  SyncThing running on your desktop or laptop computer is not publicly accessible, and does not need to be password protected.
+SyncThing running on your desktop or laptop computer is not publicly accessible, and does not need to be password protected.
+
 </Warning>
 
 <Frame caption="Setting a user and password in your Zo Computer SyncThing">
-  <img
-    className="block"
-    src="/screenshots/syncthing-password.png"
-  />
+  <img className="block" src="/screenshots/syncthing-password.png" />
 </Frame>
 
 # 5. Connect your SyncThings
@@ -120,10 +114,7 @@ Open both SyncThing applications. Add your computer as a connected device to you
 2. In **your computer's SyncThing**, click "Actions" → "Show ID" to see your device ID. Copy into the "Add Device" dialog and save.
 
 <Frame caption="Connecting a device to SyncThing">
-  <img
-    className="block"
-    src="/screenshots/syncthing-add-device.png"
-  />
+  <img className="block" src="/screenshots/syncthing-add-device.png" />
 </Frame>
 
 # 6. Create a shared folder
@@ -133,7 +124,8 @@ In your **Zo Computer's SyncThing**, click **"Add Folder"**.
 <Info>
   The files you see in the Zo application are in your **workspace**, which is located at `/home/workspace`.
 
-  Your shared **Folder path** must be in your workspace.
+Your shared **Folder path** must be in your workspace.
+
 </Info>
 
 For example, you might choose:
@@ -143,10 +135,7 @@ For example, you might choose:
 ```
 
 <Frame caption="Creating a shared folder in your Zo Computer's SyncThing">
-  <img
-    className="block"
-    src="/screenshots/syncthing-folder.png"
-  />
+  <img className="block" src="/screenshots/syncthing-folder.png" />
 </Frame>
 
 In **your computer's SyncThing**, a "New Folder" notification will appear. Click "Add".
@@ -158,19 +147,13 @@ In the dialog, choose a location for the folder you want to sync with your Zo Co
 ```
 
 <Frame caption="Creating a shared folder in your Zo Computer's SyncThing">
-  <img
-    className="block"
-    src="/screenshots/syncthing-folder-confirm.png"
-  />
+  <img className="block" src="/screenshots/syncthing-folder-confirm.png" />
 </Frame>
 
 Your SyncThings should now look like this:
 
 <Frame caption="Our two computers are connected">
-  <img
-    className="block"
-    src="/screenshots/syncthing-connected.png"
-  />
+  <img className="block" src="/screenshots/syncthing-connected.png" />
 </Frame>
 
 That's it\! Changes to the shared folder will be synced between your computer and your Zo Computer.
@@ -187,6 +170,4 @@ That's it\! Changes to the shared folder will be synced between your computer an
   />
 </Frame>
 
-<Warning>
-  The `.stfolder` folder inside your shared folder is used internally by SyncThing. Do not delete it.
-</Warning>
+<Warning>The `.stfolder` folder inside your shared folder is used internally by SyncThing. Do not delete it.</Warning>

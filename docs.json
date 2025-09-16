@@ -14,13 +14,13 @@
           },
           {
             "group": "Working with your AI",
-            "icon": "message-circle",
+            "icon": "bot",
             "pages": ["interactions", "model-selection", "behavior", "scheduled-tasks"]
           },
           {
             "group": "Advanced",
             "icon": "fish",
-            "pages": ["servers", "syncthing"]
+            "pages": ["servers", "sites", "syncthing"]
           }
         ]
       },
