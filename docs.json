@@ -1,12 +1,26 @@
 {
+  "icons": {
+    "library": "lucide"
+  },
   "navigation": {
     "tabs": [
       {
         "tab": "Guides",
         "groups": [
           {
-            "group": "Owner's Manual",
-            "pages": ["intro", "workspace", "ai", "start", "syncthing", "pricing", "vision", "changelog"]
+            "group": "Getting started",
+            "icon": "flag",
+            "pages": ["intro", "vision", "product-updates", "pricing"]
+          },
+          {
+            "group": "Working with your AI",
+            "icon": "message-circle",
+            "pages": ["interactions", "model-selection", "behavior", "scheduled-tasks"]
+          },
+          {
+            "group": "Advanced",
+            "icon": "fish",
+            "pages": ["syncthing"]
           }
         ]
       },
