@@ -5,23 +5,70 @@ description: "Doing more with your AI computer"
 
 We believe **everyone is capable of doing much more with computers** – which is why we're giving you a **personal server**.
 
-Using your personal server is easy, because we set up all the hard stuff, designed a friendly interface, and created an AI that lives on your server. But to help you get the most out of your server, we believe in teaching you how to fish.
+Using your personal server is easy, because we set up all the hard stuff, designed a friendly interface, and created an AI that lives on your server. To help you get the most out of your server, we'll try our best to teach you **how to fish**.
 
-In this guide, we'll teach you some basics about how servers and the internet work. This will prepare you for the other guides in this section, which will show you how you can use your server to host websites, run services, connect to other computers, and more.
+In this guide, we'll teach you the basics of how servers work. This will prepare you for the other guides in this section, which will show you how you can use your server to host websites, run services, connect to other computers, and more.
 
 <Tip>Zo is for everyone, so this guide assumes you have no prior experience with computer programming or servers.</Tip>
 
 ## What is a server?
 
-Data center servers are the most powerful kind of computer. Everything on the internet runs on them. Unlike personal computers, servers are:
+A <Icon icon="server-crash" /> **server** is a computer connected to the internet that "serves" other computers on the internet. Other computers can send a message to the server.
 
-1. Always-on, with data-center grade internet speeds
-2. Powerful, with data-center grade hardware
+Any computer, including your laptop, can be a server. But usually, servers live in data centers, which are large buildings with many specialized computers connected to the internet. Compared with a laptop, data‑center servers are:
 
-## What's in my server?
+- Always on, with stable, high‑speed networking
+- Built for reliability and continuous load
 
-tktk
+<Info>
+  Just like they say "happiness is a state of mind", **serving is "state of mind"** for a computer. Data center servers
+  are a special kind of computer designed to be really good at serving.
+</Info>
+
+All of the websites, and most of the applications we use today run on servers. A company typically runs many servers with duplicate copies of their software, which lets them serve requests from many users at the same time.
+
+Most people don't use servers as personal computers – not even your average computer programmer next door. Before Zo, only the most hardcore computer users had the motivation and skill to set up and use their own <Icon icon="server-crash" /> **personal server**.
 
 ## What is a service?
 
-tktk
+A <Icon icon="square-terminal" /> **service** is a computer program, also known as a **process**, that can listen to requests from other computers on the internet.
+
+A process on your computer can have a <Icon icon="mailbox" /> **port**, which is a mailbox on your computer where the process can “listen” for incoming messages. Many services can run on the same computer, as long as they use different ports.
+
+<Accordion title="More about port numbers" icon="mailbox">
+  The numbers used for ports are typically between `1024` and `65535`. Numbers below 1024 are reserved for the
+  computer's official services. These official ports include `80` (for websites), `443` (for secure websites), and `22`
+  (for secure remote access). The rest of the ports are available for other programs to use. While there are common port
+  numbers that many programs follow, these are conventions rather than strict rules.
+</Accordion>
+
+Computers on the internet communicate using specific languages called <Icon icon="scroll" /> **protocols**. When a service runs on your server, it uses a particular protocol to understand and respond to incoming requests.
+
+<Accordion title="Common protocols" icon="scroll">
+
+- **TCP** is the foundational protocol that breaks data into small pieces, sends them reliably and in order, then
+  reassembles them on the other side. It ensures messages don’t get lost or mixed up during transmission.
+- **HTTP** builds on top of TCP and defines the rules for requesting and sending data between computers. It powers most of the services behind the websites and apps you use every day.
+- **HTTPS** is the secure version of HTTP. It uses encryption (TLS) to keep your data private and verifies you’re connecting to the real server, not an imposter. Often, TLS is handled outside your server by a secure “edge” or “tunnel” that manages encryption and certificates for you.
+- **SSH** is a secure protocol for remotely accessing and controlling your server. It encrypts all information you send, protecting your login and commands from interception.
+
+</Accordion>
+
+## Services on your Zo server
+
+When setting up a service on your Zo server, you only need to provide a handful of settings because we've already set up all the hard stuff.
+
+<Tip>Zo can set up and manage services for you, but it's helpful to understand what each setting means.</Tip>
+
+|                       |                                                                   |
+| --------------------- | ----------------------------------------------------------------- |
+| Local port            | The <Icon icon="mailbox"/> port on your server.                   |
+| Type                  | The <Icon icon="scroll"/> protocol, either HTTPS or TCP.          |
+| Entrypoint            | The command to start your <Icon icon="square-terminal"/> service. |
+| Working directory     | The folder where the command should run.                          |
+| Environment variables | Additional settings for running the command.                      |
+
+After your service is up and running, you'll get two URLs that you can use to access your service on the public internet. In general, you should:
+
+- Use the **"HTTP Proxy URL"** for accessing most web services, like websites and APIs.
+- Use the **"Direct Tunnel URL"** for non-web services, or if the HTTP Proxy URL doesn't behave as expected.
