@@ -20,7 +20,7 @@
           {
             "group": "Advanced",
             "icon": "fish",
-            "pages": ["servers", "sites", "syncthing"]
+            "pages": ["fish", "servers", "sites", "syncthing"]
           }
         ]
       },

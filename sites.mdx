@@ -1,5 +1,66 @@
 ---
-title: "Creating sites"
+title: "Create websites"
 icon: "zap"
-description: "Doing more with your AI computer"
+description: "Create websites with your files, hosted on your Zo server"
 ---
+
+Your Zo comes with a built-in way to create sites hosted on your Zo server. Select <Icon icon="zap" /> **Create site**, and Zo will create a new website template for you in a new folder with the lightning icon <Icon icon="zap" />. When you select the site's folder, you'll see a preview of the site.
+
+<Frame caption="A Zo site, displaying data from a database in spotify-db">
+  <img className="block" src="/screenshots/zite.png" />
+</Frame>
+
+Because your site is hosted on your **personal server** along with your other files, you can easily incorporate files from your workspace into your site. This means you can do things like:
+
+- Save responses from a form to a database in your workspace.
+- Integrate any file or folder from your workspace into your site.
+
+All you have to do is mention the files or folders you want to incorporate as you chat with Zo.
+
+## Accessing your site
+
+You'll get a URL to access your site that looks like this: `sitename-yourhandle.zocomputer.io`
+
+<Info>
+
+> this is a special service, needs auth, you can publish it with a user service
+
+## <Icon icon="fish" /> Learn to fish
+
+You don't have to know how to code to create websites, because Zo can write the code for you. But knowing a bit about what's going on behind the scenes can help you have more productive conversations with Zo.
+
+Zo creates a simple but powerful website template using [Hono](https://hono.dev), a popular web application framework.
+
+<Info>
+  The built-in site tool is our recommended way to create websites on your Zo. But of course, you can use
+  [services](/servers) to run anything on your Zo, using any technology you want.
+</Info>
+
+Websites have two sides, the **backend** and the **frontend**.
+
+- The **backend** is the part of your site that runs on your server.
+- The **frontend** is the part of your site that runs in the browser.
+  - Your backend delivers your site's frontend code to the user's browser, and the browser runs your frontend.
+
+<AccordionGroup>
+<Accordion title="What are the code files inside my site?">
+
+- <Icon icon="file-code" /> `.gitignore` – Used to ignore files that should not be tracked in version history.
+- <Icon icon="file-code" /> `bun.lock` – Used to "lock" the versions of software packages used in your site.
+- <Icon icon="file-text" /> `CLAUDE` – Documentation used by the Zo coding agent when it works on your site. You can
+  edit this file to provide additional guidance to the coding agent.
+- <Icon icon="file-code" /> `index.tsx` – The main code file for your site. For simple sites, Zo will write all the code
+  in this file. As your site grows, Zo may create additional code files.
+- <Icon icon="file-json" /> `tsconfig.json` – Your site uses the TypeScript programming language, and this file
+  configures your site's TypeScript settings.
+- <Icon icon="file-json" /> `zosite.json` – Settings for how your site is hosted on your Zo server.
+
+</Accordion>
+<Accordion title="What else should I know about my site?">
+
+- [Hono](https://hono.dev) is the **web server**. When we call Hono a "server", we really mean that it's the [service](/servers#what-is-a-service%3F): a program that handles requests to your site.
+- [Bun](https://bun.sh) is the **runtime**, which runs the web server.
+- Bun is also the **package manager**. As you add more functionality to your site's backend server, Zo may use Bun to install additional software packages.
+
+</Accordion>
+</AccordionGroup>

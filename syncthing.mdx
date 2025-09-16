@@ -1,10 +1,10 @@
 ---
-title: "Syncing files"
+title: "Sync files and folders"
 icon: "folder"
-description: "How to sync files between your computer and your Zo Computer"
+description: "How to sync files from another computer to your Zo"
 ---
 
-<Frame caption="A synced folder in Zo Computer and macOS Finder">
+<Frame caption="A synced folder in Zo and macOS Finder">
   <img
     className="block dark:hidden"
     src="/screenshots/syncthing-synced-light.png"
@@ -35,9 +35,9 @@ Install SyncThing on your computer by downloading the app from the [SyncThing Do
 
 Keep this window open – we'll return to it later.
 
-# 2. Install SyncThing on your Zo Computer
+# 2. Install SyncThing on your Zo
 
-To install SyncThing on your Zo Computer, tell Zo to follow the instructions on the [SyncThing Linux installation](https://apt.syncthing.net/) page. Copy and paste the text below into a new chat:
+To install SyncThing on your Zo Computer, we can tell Zo to follow the instructions on the [SyncThing Linux installation](https://apt.syncthing.net/) page by copying and pasting the text below into a new chat:
 
 ```txt
 Run the following commands sequentially to install SyncThing:
@@ -48,11 +48,11 @@ apt-get update
 apt-get install syncthing
 ```
 
-# 3. Run SyncThing on your Zo Computer
+# 3. Run SyncThing on your Zo
 
 Open the Zo System page from the left sidebar:
 
-<Frame caption="The Zo Computer System page">
+<Frame caption="The Zo System page">
   <img
     className="block dark:hidden"
     src="/screenshots/system-light.png"
@@ -93,24 +93,24 @@ Once your service is running, open the SyncThing application using the **Direct 
   Complex hosted applications may not work via the HTTP Proxy URL. For SyncThing, always use the Direct Tunnel URL.
 </Info>
 
-# 4. Password protect your Zo Computer's SyncThing
+# 4. Password protect your Zo's SyncThing
 
 <Warning>
-  You **must set a password** for your Zo Computer's SyncThing. If you don't, anyone with the service URL can access it.
+  You **must set a password** for your Zo's SyncThing. If you don't, anyone with the service URL can access it.
 
-SyncThing running on your desktop or laptop computer is not publicly accessible, and does not need to be password protected.
+SyncThing running on your desktop or laptop is not publicly accessible, and does not need to be password protected.
 
 </Warning>
 
-<Frame caption="Setting a user and password in your Zo Computer SyncThing">
+<Frame caption="Setting a user and password in your Zo SyncThing">
   <img className="block" src="/screenshots/syncthing-password.png" />
 </Frame>
 
 # 5. Connect your SyncThings
 
-Open both SyncThing applications. Add your computer as a connected device to your Zo Computer's SyncThing:
+Open both SyncThing applications. Add your computer as a connected device to your Zo's SyncThing:
 
-1. In your **Zo Computer's SyncThing**, click "Add Remote Device".
+1. In your **Zo's SyncThing**, click "Add Remote Device".
 2. In **your computer's SyncThing**, click "Actions" → "Show ID" to see your device ID. Copy into the "Add Device" dialog and save.
 
 <Frame caption="Connecting a device to SyncThing">
@@ -119,7 +119,7 @@ Open both SyncThing applications. Add your computer as a connected device to you
 
 # 6. Create a shared folder
 
-In your **Zo Computer's SyncThing**, click **"Add Folder"**.
+In your **Zo's SyncThing**, click **"Add Folder"**.
 
 <Info>
   The files you see in the Zo application are in your **workspace**, which is located at `/home/workspace`.
@@ -134,19 +134,19 @@ For example, you might choose:
 /home/workspace/Laptop
 ```
 
-<Frame caption="Creating a shared folder in your Zo Computer's SyncThing">
+<Frame caption="Creating a shared folder in your Zo's SyncThing">
   <img className="block" src="/screenshots/syncthing-folder.png" />
 </Frame>
 
 In **your computer's SyncThing**, a "New Folder" notification will appear. Click "Add".
 
-In the dialog, choose a location for the folder you want to sync with your Zo Computer. For example, on macOS you might choose:
+In the dialog, choose a location for the folder you want to sync with your Zo. For example, on macOS you might choose:
 
 ```sh
 ~/Documents/Zo Computer
 ```
 
-<Frame caption="Creating a shared folder in your Zo Computer's SyncThing">
+<Frame caption="Creating a shared folder in your Zo's SyncThing">
   <img className="block" src="/screenshots/syncthing-folder-confirm.png" />
 </Frame>
 
@@ -156,9 +156,9 @@ Your SyncThings should now look like this:
   <img className="block" src="/screenshots/syncthing-connected.png" />
 </Frame>
 
-That's it\! Changes to the shared folder will be synced between your computer and your Zo Computer.
+That's it\! Changes to the shared folder will be synced between your computer and your Zo.
 
-<Frame caption="A synced folder in Zo Computer and macOS Finder">
+<Frame caption="A synced folder in Zo and macOS Finder">
   <img
     className="block dark:hidden"
     src="/screenshots/syncthing-synced-light.png"
@@ -169,5 +169,3 @@ That's it\! Changes to the shared folder will be synced between your computer an
     src="/screenshots/syncthing-synced-dark.png"
   />
 </Frame>
-
-<Warning>The `.stfolder` folder inside your shared folder is used internally by SyncThing. Do not delete it.</Warning>
