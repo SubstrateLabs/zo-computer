@@ -9,11 +9,11 @@
         "groups": [
           {
             "group": "Getting started",
-            "pages": ["intro", "fish", "product-updates", "pricing"]
+            "pages": ["intro", "interactions", "fish", "product-updates", "pricing"]
           },
           {
             "group": "Working with your AI",
-            "pages": ["interactions", "model-selection", "behavior", "scheduled-tasks"]
+            "pages": ["model-selection", "prompting", "behavior", "scheduled-tasks"]
           },
           {
             "group": "Using your AI computer",
