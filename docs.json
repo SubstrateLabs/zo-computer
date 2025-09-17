@@ -9,17 +9,14 @@
         "groups": [
           {
             "group": "Getting started",
-            "icon": "flag",
             "pages": ["intro", "fish", "product-updates", "pricing"]
           },
           {
             "group": "Working with your AI",
-            "icon": "bot",
             "pages": ["interactions", "model-selection", "behavior", "scheduled-tasks"]
           },
           {
-            "group": "Advanced",
-            "icon": "fish",
+            "group": "Using your AI computer",
             "pages": ["servers", "sites", "syncthing"]
           }
         ]
