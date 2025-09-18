@@ -4,21 +4,11 @@ icon: "folder"
 description: "How to sync files from another computer to your Zo"
 ---
 
-<Frame caption="A synced folder in Zo and macOS Finder">
-  <img
-    className="block dark:hidden"
-    src="/screenshots/syncthing-synced-light.png"
-  />
-
-  <img
-    className="hidden dark:block"
-    src="/screenshots/syncthing-synced-dark.png"
-  />
-</Frame>
+There are many ways to sync files or folders between two devices. This guide will show you how to set up [SyncThing](https://syncthing.net/), a popular free and open-source tool for syncing between devices.
 
 # 1. Install SyncThing on your computer
 
-Install SyncThing on your computer by downloading the app from the [SyncThing Downloads](https://syncthing.net/downloads/) page. You may need to use the menu to open the full SyncThing application.
+Install SyncThing on your computer by downloading the app from the [SyncThing Downloads](https://syncthing.net/downloads/) page.
 
 <Frame caption="Click Open from the SyncThing menu to open the application">
   <img className="block" src="/screenshots/syncthing-menubar.png" />
@@ -28,11 +18,9 @@ Install SyncThing on your computer by downloading the app from the [SyncThing Do
   <img className="block" src="/screenshots/syncthing-first-open.png" />
 </Frame>
 
-Keep this window open – we'll return to it later.
-
 # 2. Install SyncThing on your Zo
 
-To install SyncThing on your Zo Computer, we can tell Zo to follow the instructions on the [SyncThing Linux installation](https://apt.syncthing.net/) page by copying and pasting the text below into a new chat:
+To install SyncThing on your Zo Computer, copy and paste the text below into a new chat:
 
 ```txt
 Run the following commands sequentially to install SyncThing:
@@ -43,9 +31,11 @@ apt-get update
 apt-get install syncthing
 ```
 
+Source: [Installing SyncThing on Ubuntu](https://apt.syncthing.net/)
+
 # 3. Run SyncThing on your Zo
 
-Open the Zo System page from the left sidebar:
+Open the System page in your Zo:
 
 <Frame caption="The Zo System page">
   <img
@@ -116,18 +106,18 @@ Open both SyncThing applications. Add your computer as a connected device to you
 
 In your **Zo's SyncThing**, click **"Add Folder"**.
 
-<Info>
-  The files you see in the Zo application are in your **workspace**, which is located at `/home/workspace`.
-
-Your shared **Folder path** must be in your workspace.
-
-</Info>
-
 For example, you might choose:
 
 ```sh
 /home/workspace/Laptop
 ```
+
+<Accordion title="Why /home/workspace?">
+  The files you can see in the Zo application are in `/home/workspace` on your Zo Computer.
+
+Your SyncThing **Folder path** must be in this workspace, otherwise you will not be able to see it in the Zo application.
+
+</Accordion>
 
 <Frame caption="Creating a shared folder in your Zo's SyncThing">
   <img className="block" src="/screenshots/syncthing-folder.png" />
@@ -152,15 +142,3 @@ Your SyncThings should now look like this:
 </Frame>
 
 That's it\! Changes to the shared folder will be synced between your computer and your Zo.
-
-<Frame caption="A synced folder in Zo and macOS Finder">
-  <img
-    className="block dark:hidden"
-    src="/screenshots/syncthing-synced-light.png"
-  />
-
-  <img
-    className="hidden dark:block"
-    src="/screenshots/syncthing-synced-dark.png"
-  />
-</Frame>

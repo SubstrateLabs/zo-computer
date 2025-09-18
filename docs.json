@@ -9,15 +9,15 @@
         "groups": [
           {
             "group": "Getting started",
-            "pages": ["intro", "interactions", "fish", "product-updates", "pricing"]
+            "pages": ["intro", "interactions", "connections", "fish", "product-updates", "pricing"]
           },
           {
             "group": "Working with your AI",
             "pages": ["model-selection", "prompting", "behavior", "scheduled-tasks"]
           },
           {
-            "group": "Using your AI computer",
-            "pages": ["servers", "sites", "syncthing"]
+            "group": "Using your server",
+            "pages": ["servers", "sites", "syncthing", "ssh-zo", "ssh-computer"]
           }
         ]
       },
