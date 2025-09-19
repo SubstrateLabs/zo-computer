@@ -13,7 +13,7 @@
           },
           {
             "group": "Working with your AI",
-            "pages": ["model-selection", "prompting", "behavior", "scheduled-tasks"]
+            "pages": ["models", "prompting", "behavior", "scheduled-tasks"]
           },
           {
             "group": "Using your server",
