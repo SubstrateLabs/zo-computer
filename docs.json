@@ -9,7 +9,7 @@
         "groups": [
           {
             "group": "Getting started",
-            "pages": ["intro", "interactions", "connections", "fish", "product-updates", "pricing"]
+            "pages": ["intro", "interactions", "connections", "fish", "updates", "pricing"]
           },
           {
             "group": "Working with your AI",
