@@ -17,7 +17,11 @@
           },
           {
             "group": "Using your server",
-            "pages": ["servers", "sites", "syncthing", "ssh-zo", "ssh-computer"]
+            "pages": ["servers", "sites", "syncthing", "ssh-zo"]
+          },
+          {
+            "group": "Ridiculous but possible",
+            "pages": ["ssh-computer"]
           }
         ]
       },

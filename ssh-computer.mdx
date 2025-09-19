@@ -1,16 +1,19 @@
 ---
-title: "Connect to your computer"
-description: "How to connect Zo to your computer"
+title: "Control other computers"
+description: "How to operate another computer using Zo"
 icon: "hard-drive-download"
 ---
 
 import Passphrase from "/snippets/ssh-passphrase.mdx";
 
-You can give Zo access to another computer (like your laptop) by connecting to it via SSH. This guide will walk you through connecting Zo to your computer.
-
 <Warning>
-  Connecting Zo to your computer using SSH is powerful but not without risks. By doing so, you are giving your AI full
-  access to your computer.
+  Connecting Zo to another computer using SSH is risky. By doing so, you are giving your AI unconstrained access to everything on that computer – a ridiculous thing to do, if it's your personal computer.
+
+You should only proceed with this guide if you fully understand the risks and are comfortable with the potential
+consequences of Zo making mistakes, or falling prey to prompt injection.
+
+This use case can be an impressive "party trick" (and can be genuinely useful depending on the device you are connecting to), but should not be used regularly unless you are completely comfortable with the security of your setup.
+
 </Warning>
 
 # 1. Generate an SSH key on your Zo
