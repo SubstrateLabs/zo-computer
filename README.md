@@ -10,3 +10,7 @@
 - Zo can create websites, with your files.
   - You can publish any of your files or folders as a custom site.
   - You can create a form that saves responses to a database – all hosted on your Zo.
+
+## references
+
+- Apple SSH and FileVault in Tahoe https://news.ycombinator.com/item?id=45294440
