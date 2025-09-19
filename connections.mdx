@@ -4,4 +4,52 @@ description: "Connecting Zo to other apps"
 icon: "plug-zap"
 ---
 
-Coming soon
+import { Handle, HandleLink } from "/snippets/handle.jsx";
+
+You can connect your Zo to various apps and services from the Settings page.
+
+By default, Zo will get **Read Only** access to the app or service, meaning that it can only view data but not modify it. To give Zo the ability to modify data, select the **Read/Write** option.
+
+<Tip>
+Your Zo Computer can be used as a file storage service.
+
+To sync a folder on your computer with your Zo workspace, follow our [Sync files and folders](/syncthing) guide.
+
+</Tip>
+
+## Notion
+
+- When you connect **Notion**, you'll be able to download documents from Notion into your Zo computer using the Zo application.
+- **Read Only**: Zo will be able to search and read documents in Notion.
+- **Read & Write**: Zo will be able to edit and create documents in Notion.
+
+## Google Drive
+
+- When you connect **Google Drive**, you'll be able to download files from Google Drive into your Zo computer using the Zo application.
+- **Read Only**: Zo will be able to search and read files in Google Drive.
+- **Read & Write**: Zo will be able to upload files to Google Drive.
+
+## Calendar
+
+- **Read Only**: Zo will be able to search and view events on your calendar.
+- **Read & Write**: Zo will be able to edit and create events on your calendar.
+
+## Gmail
+
+Your Zo comes with its own email address, **<Handle/>@zo.computer**. You can email this address to instruct Zo, and Zo can email you from this address.
+
+<Warning>
+  Giving Zo the ability to read your email and send emails using your Gmail account is risky.
+
+You should only enable
+this capability if you fully understand the risks, and are comfortable with the potential consequences of Zo making mistakes or falling prey to prompt
+injection.
+
+</Warning>
+
+- **Read Only**: Zo will be able to search and view emails in your Gmail account.
+- **Read & Write**: Zo will be able to send emails using your Gmail account.
+
+<Frame caption="Managing a connection in Settings">
+  <img className="block" src="/screenshots/connections.png" />
+</Frame>
