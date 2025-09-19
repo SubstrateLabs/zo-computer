@@ -1,0 +1,30 @@
+---
+title: "Run Python notebooks"
+description: "Turn your Zo into a Python development environment"
+icon: "folder-code"
+---
+
+[Marimo](https://marimo.io) is a reactive notebook environment where you create scripts, pipelines, and applications using Python. You can run Marimo on your Zo by creating a new service.
+
+|                       |                                                                                     |
+| --------------------- | ----------------------------------------------------------------------------------- |
+| Label                 | `marimo`                                                                            |
+| Local port            | `8081`                                                                              |
+| Type                  | `http`                                                                              |
+| Entrypoint            | `marimo edit --headless --host 0.0.0.0 --port 8081 --token-password="YOURPASSWORD"` |
+| Working directory     | `/home/workspace`                                                                   |
+| Environment variables | None                                                                                |
+
+Reference: [How do I use Marimo on a remote server?](https://docs.marimo.io/faq/#faq-remote)
+
+<Info>
+  Marimo comes with built-in [password authentication](https://docs.marimo.io/guides/deploying/authentication/). When
+  you first access your service, you'll be prompted to enter the password you set in your **Entrypoint** command.
+</Info>
+
+Now, we can edit and create Marimo notebook files in our Zo workspace. In the Marimo application, you can browse other files in your workspace, use the terminal, set up AI assistance, and much more – it's a powerful, extensive tool for developing Python notebooks.
+
+<Frame caption="Marim-Zo">
+  <img className="block dark:hidden" src="/screenshots/marimo-light.png" />
+  <img className="hidden dark:block" src="/screenshots/marimo-dark.png" />
+</Frame>
