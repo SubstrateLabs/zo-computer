@@ -17,7 +17,7 @@
           },
           {
             "group": "Using your server",
-            "pages": ["servers", "sites", "syncthing", "ssh-zo", "marimo"]
+            "pages": ["servers", "sites", "syncthing", "git", "ssh-zo", "marimo"]
           },
           {
             "group": "Ridiculous but possible",
