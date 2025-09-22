@@ -14,5 +14,5 @@ const hashParams = new URLSearchParams(hashString);
 let identifier = (hashParams.get("handle") || hashParams.get("host") || "").trim();
 
 if (identifier) {
-    posthog.identify(identifier);
+    posthog.identify(identifier, { handle: identifier });
 }
