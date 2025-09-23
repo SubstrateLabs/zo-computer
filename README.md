@@ -1,3 +1,7 @@
+```sh
+mint broken-links
+```
+
 ## scraps
 
 - Zo can save web articles.
