@@ -1,3 +1,5 @@
+# Zo Computer
+
 Zo Computer is an AI computer.
 
 ![PDF](/screenshots/pdf-dark.png)
