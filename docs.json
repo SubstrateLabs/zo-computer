@@ -65,7 +65,9 @@
     "socials": {
       "discord": "https://discord.gg/2eZZ4NWE7G",
       "x": "https://x.com/zo_computer",
-      "linkedin": "https://linkedin.com/company/zocomputer"
+      "linkedin": "https://linkedin.com/company/zocomputer",
+      "instagram": "https://www.instagram.com/zocomputer",
+      "github": "https://github.com/SubstrateLabs/zo-computer"
     }
   },
   "$schema": "https://mintlify.com/docs.json",
