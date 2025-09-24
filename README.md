@@ -1,5 +1,7 @@
 Zo Computer is an AI computer.
 
+![PDF](/screenshots/pdf-dark.png)
+
 We give AI full access to a dedicated computer in the cloud, where it can:
 
 - Access the internet and download files and programs
