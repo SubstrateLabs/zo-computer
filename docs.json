@@ -1,7 +1,10 @@
 {
-  "icons": {
-    "library": "lucide"
-  },
+  "redirects": [
+    {
+      "source": "/interactions",
+      "destination": "/"
+    }
+  ],
   "navigation": {
     "tabs": [
       {
@@ -9,7 +12,7 @@
         "groups": [
           {
             "group": "Getting started",
-            "pages": ["intro", "interactions", "connections", "fish", "updates", "pricing"]
+            "pages": ["intro", "connections", "fish", "updates", "pricing"]
           },
           {
             "group": "Working with your AI",
@@ -94,5 +97,8 @@
     "href": "https://www.zo.computer",
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
+  },
+  "icons": {
+    "library": "lucide"
   }
 }
